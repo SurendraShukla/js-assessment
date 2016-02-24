@@ -32,7 +32,7 @@ describe('counter', function () {
   });
 
   afterEach(function () {
-    console.log = origConsoleLog;
+   console.log = origConsoleLog;
 
     this.clock.restore();
   });

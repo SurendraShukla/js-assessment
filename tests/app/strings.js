@@ -16,11 +16,13 @@ describe('strings', function() {
     var inputStrings = [
       'abcdef abcde abc def',
       'abc abc abc',
+      'abc abcdef abc',
       'a b c def'
     ];
     var outputStrings = [
       'abcdef\nabcde\nabc\ndef',
       'abc\nabc\nabc',
+      'abc\nabcdef\nabc',
       'a b c\ndef'
     ];
     var formattedStr;

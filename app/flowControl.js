@@ -11,5 +11,9 @@ exports.flowControlAnswers = {
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
 
+    var returnVal = '';
+    if(num%3 == 0) returnVal+=""+'fizz';
+    if(num%5 == 0) returnVal+=""+'buzz';
+    return returnVal || parseInt(num);
   }
 };
